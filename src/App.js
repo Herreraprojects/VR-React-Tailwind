@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from './Components/Navbar';
+import Hero from './Components/Hero';
+import Analytics from './Components/Analytics';
+import Newsletter from './Components/Newsletter';
+import Cards from './Components/Cards';
+import Footer from './Components/Footer'
+import { useSpring, animated } from '@react-spring/web';
+
 
 function App() {
+
+  const props = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    config: { duration: 1500 },
+  });
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <animated.div style={props}>
+
+    <div>
+      <Navbar/>
+      <Hero/>
+      <Analytics/>
+      <Newsletter/>
+      <Cards/>
+      <Footer/>
     </div>
+    </animated.div>
+
+    
   );
 }
 
