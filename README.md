@@ -1,5 +1,8 @@
 Technologies: React.js, Tailwind, Reat-Typed, reactSpring, VSCode
 
+
+![vr](https://github.com/Herreraprojects/VR-React-Tailwind/assets/119438944/75ad484a-3e2f-474a-8ff6-6ce5dc0ddd8a)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
